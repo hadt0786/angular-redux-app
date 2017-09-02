@@ -8,7 +8,7 @@ redux-observable Side-effect handling with Observables
 @angular-redux/router Time travel with the Angular router
 @angular-redux/form Time travel with Angular forms
 
-This project demonstartes the use of Redux along with angular 4. Data detched from the service is stored into a redux store in the front-end layer. This data from the redux store is then used for data bindings on HTML pages.
+This project demonstrates the use of Redux along with angular 4. Data fetched from the service is stored into a redux store in the front-end layer. This data from the redux store is then used for data bindings on HTML pages.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.3.
 
 ## Pre-requisites:
