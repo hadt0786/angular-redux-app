@@ -1,0 +1,35 @@
+.dataTable {
+  table-layout: fixed;
+  width: 60%;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+
+.row-1 {
+  width: 30%;
+}
+
+.row-2 {
+  width: 40%;
+}
+
+.dataTable td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dataTable th {
+  background: darkblue;
+  color: white;
+}
+
+.dataTable td,
+.dataTable th {
+  text-align: left;
+  padding: 5px 10px;
+}
+
+.dataTable tr:nth-child(even) {
+  background: lightblue;
+}

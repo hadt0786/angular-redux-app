@@ -1,0 +1,80 @@
+<h1>Profile Details</h1>
+
+<table id="personal-details" class="dataTable">
+  <thead>
+    <tr>
+      <th class="row-1">Personal Details</th>
+      <th class="row-2">value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Title</td>
+      <td id="title">{{(profileDetails | async)?.personalDetails?.title}}</td>
+    </tr>
+
+    <tr>
+      <td>Name</td>
+      <td>{{(profileDetails | async)?.personalDetails?.forename}}</td>
+    </tr>
+
+    <tr>
+      <td>Surname</td>
+      <td>{{(profileDetails | async)?.personalDetails?.surname}}</td>
+    </tr>
+
+    <tr>
+      <td>Gender</td>
+      <td>{{(profileDetails | async)?.personalDetails?.gender}}</td>
+    </tr>
+
+    <tr>
+      <td>Marital Status</td>
+      <td>{{(profileDetails | async)?.personalDetails?.maritalStatus}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="contact-details" class="dataTable">
+  <thead>
+    <tr>
+      <th class="row-1">Contact Details</th>
+      <th class="row-2">value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Address</td>
+      <td>
+        {{(profileDetails | async)?.contactDetails?.postalAddress?.line1}}, {{(profileDetails | async)?.contactDetails?.postalAddress?.line2}},
+        {{(profileDetails | async)?.contactDetails?.postalAddress?.line3}}, {{(profileDetails | async)?.contactDetails?.postalAddress?.line4}},
+        {{(profileDetails | async)?.contactDetails?.postalAddress?.postcode}}
+      </td>
+    </tr>
+
+    <tr>
+      <td>Work email</td>
+      <td>{{(profileDetails | async)?.contactDetails?.emailAddresses?.work}}</td>
+    </tr>
+
+    <tr>
+      <td>Personal email</td>
+      <td>{{(profileDetails | async)?.contactDetails?.emailAddresses?.personal}}</td>
+    </tr>
+
+    <tr>
+      <td>Home phone</td>
+      <td>{{(profileDetails | async)?.contactDetails?.telephoneNumbers?.home}}</td>
+    </tr>
+
+    <tr>
+      <td>Work phone</td>
+      <td>{{(profileDetails | async)?.contactDetails?.telephoneNumbers?.work}}</td>
+    </tr>
+
+    <tr>
+      <td>Mobile phone</td>
+      <td>{{(profileDetails | async)?.contactDetails?.telephoneNumbers?.mobile}}</td>
+    </tr>
+  </tbody>
+</table>
